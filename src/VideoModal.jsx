@@ -3,7 +3,7 @@ import { CloseButton, Description, Dialog, DialogPanel, DialogTitle } from '@hea
 import YouTube from 'react-youtube';
 
 
-const VideoModal = ({num})=>{
+const VideoModal = ({videoPath, order})=>{
     const [isOpen, setIsOpen] = useState(false)
 
     function open() {
@@ -30,11 +30,12 @@ const VideoModal = ({num})=>{
       }
 
     return (<>
-        <div onClick={open} className={` overflow-hidden flex justify-center items-center h-full w-full hover:scale-105 duration-300 hover:z-50 relative`} style={{order:num}}>
+        <div onClick={open} className={` overflow-hidden flex justify-center items-center h-full w-full hover:scale-105 duration-300 hover:z-50 relative`} style={{order:order}}>
             {/* <img src={`src/assets/photos-pueblo/image-${imgNum}.jpg`} className=" shrink-0 min-w-full min-h-full object-cover"/> */}
             
             <video className=" min-h-full min-w-full shrink-0 object-cover" autoPlay muted loop>
-                <source src={`src/assets/video-thumbnail-${num}.mov`} type="video/mp4" />
+                {console.log(videoPath)}
+                <source src={videoPath} type="video/mp4" />
             </video>
 
             <div className='flex absolute w-full h-full items-center justify-center opacity-0 hover:opacity-100 hover:bg-black/40'>
