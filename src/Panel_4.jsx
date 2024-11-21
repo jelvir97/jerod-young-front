@@ -1,3 +1,7 @@
+import About1 from "./assets/About-1.png"
+import About2 from "./assets/About-2.jpg"
+import About3 from "./assets/About-3.jpg"
+
 const Panel_4 = ()=>{
     return(
         <div className="fixed top-0 w-full h-full bg-black p-1 animate-panel-4 origin-[50%_50%_-730px] [animation-timeline:scroll()] m-0">
@@ -9,9 +13,9 @@ const Panel_4 = ()=>{
                     </p>
                 </div>
                 <div className=" h-[80vh] relative">
-                    <img src="src/assets/About-1.png" className=" h-[50vh] absolute top-5 right-28 z-10"/>
-                    <img src="src/assets/About-2.jpg" className=" h-[80vh] absolute"/>
-                    <img src="src/assets/About-3.JPG" className=" h-[30vh] absolute -bottom-5 right-24 z-20"/>
+                    <img src={About1} className=" h-[50vh] absolute top-5 right-28 z-10"/>
+                    <img src={About2} className=" h-[80vh] absolute"/>
+                    <img src={About3} className=" h-[30vh] absolute -bottom-5 right-24 z-20"/>
                 </div>
             </div>
         </div>

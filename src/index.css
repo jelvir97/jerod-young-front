@@ -11,10 +11,10 @@
 @layer base {
   @font-face {
     font-family: "Poiret";
-    src: url("src/fonts/Poiret_One/PoiretOne-Regular.ttf");
+    src: url("/fonts/Poiret_One/PoiretOne-Regular.ttf");
   }
   @font-face {
     font-family: "Aleo-Thin_Italic";
-    src: url("src/fonts/Poiret_One/Aleo/static/Aleo-ExtraLightItalic.ttf");
+    src: url("/fonts/Poiret_One/Aleo/static/Aleo-ExtraLightItalic.ttf");
   }
 }

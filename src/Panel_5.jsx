@@ -2,6 +2,8 @@ import LinkedIn from "./external-links/LinkedIn";
 import Instagram from "./external-links/Instagram";
 import Youtube from "./external-links/Youtube";
 
+import JerodContact from "./assets/jerod_bg_contact.png"
+
 const Panel_5 = ()=>{
     return (
         <div className=" fixed top-0 w-full h-full bg-black  animate-panel-5 origin-[50%_50%_-730px] [animation-timeline:scroll()] m-0 ">
@@ -16,7 +18,7 @@ const Panel_5 = ()=>{
                          </div>
                     </div>
                     
-                    <img src="src/assets/jerod_bg_contact.png" className=""/>
+                    <img src={JerodContact} className=""/>
                 </div>
         </div>
     )
