@@ -1,6 +1,6 @@
 import About1 from "./assets/About-1.png"
 import About2 from "./assets/About-2.jpg"
-import About3 from "./assets/About-3.jpg"
+import About3 from "./assets/About-3.JPG"
 
 const Panel_4 = ()=>{
     return(
